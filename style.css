@@ -1,0 +1,160 @@
+
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+ }
+ 
+ .circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } 
+ .circular--portrait img { width: 100%; height: auto; }
+ 
+ .circular--portrait { 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;}
+ 
+ .section { display: flex;
+   align-items: center;
+   gap: 1rem;
+   flex-direction: column;
+ }
+ 
+ .image_name {
+   flex: 1;
+   order: -1;
+ }
+ 
+ .section:before { 
+   content: "";
+   border: 1px solid #D3D3D3;
+   align-self: stretch;
+ }
+ 
+ @media (min-width: 700px) {
+     .section {
+         align-items: center;
+         flex-direction: row;
+     }
+ }
+ 
+ .Description {
+   font-family: Arial Light, Helvetica, monospace;
+   flex: 1;
+ }
+ .Skills { 
+   font-family: Avenir Light, Helvetica, monospace;
+   flex: 1;
+ }
+ .Education { 
+   font-family: Avenir Light, Helvetica, monospace;
+   flex: 1;
+ }
+ .Experience {
+   font-family: Avenir Light, Helvetica, monospace;
+   flex: 1;
+ }
+ .Interests { 
+   font-family: Avenir Light, Helvetica, monospace;
+   flex: 1;
+ }
+ 
+ .menu_bar { 
+   border-bottom: 1px solid #D3D3D3;
+   border-top: 2px solid red;
+   text-align:center;
+ }
+ 
+ .menu_bar ul { 
+   font-family: Avenir Light, Helvetica, monospace;
+   display: block;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   display: inline-block;
+   list-style-type: none;
+ }
+ 
+ .menu_bar li {
+   float: left;
+ }
+ 
+ .menu_bar li a {
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ .menu_bar a.active { 
+   color: red;
+   text-decoration: none;
+ }
+ 
+ h1 { font-family: Avenir Light, Helvetica, monospace;
+ text-align:center;
+ font-size: x-large
+ }
+ 
+ h2 { font-family: Avenir Light, Helvetica, monospace;
+ text-align:center;
+ font-size: medium}
+ 
+ h3 { font-family: Avenir Light, Helvetica, monospace;
+ text-align:center;
+ color: red;
+ font-size: x-small}
+ 
+ h4 { font-family: Avenir Light, Helvetica, monospace;
+   font-size: x-large
+ }
+ 
+ h5 { font-family: Avenir Light, Helvetica, monospace;
+   font-size: x-large
+ }
+ 
+ .Skills h2 { 
+   font-family: Avenir Light, Helvetica, monospace;
+   font-size: x-large;
+   text-align: left;
+ }
+ 
+ .Education h2 { 
+   font-family: Avenir Light, Helvetica, monospace;
+   font-size: x-large;
+   text-align: left;
+ }
+ 
+ .Experience h2 { 
+   font-family: Avenir Light, Helvetica, monospace;
+   font-size: x-large;
+   text-align: left;
+ }
+ 
+ .Interests h2 { 
+   font-family: Avenir Light, Helvetica, monospace;
+   font-size: x-large;
+   text-align: left;
+ }
+ 
+ table { 
+   width: 100%;
+   text-align: left;
+ }
+ 
+ .tabledesign progress {
+   height: 20px;
+   width: 90%;
+ }
+ 
+ .footer { 
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #FFCCCB;
+   color: white;
+   text-align: center;
+   border-top: 1px solid #D3D3D3;
+ }
