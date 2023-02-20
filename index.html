@@ -1,77 +1,61 @@
-
-
-<!DOCTYPE html>
-<html lang="En-US">
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <title>Zahwa Fatima Profile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            #tabledesign{
-                border: 0;
-            }   
-        </style>
-    </head>
+<html>
+  <head>
+    <title>Wordle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 0, user-scalable=no">
+          
+    <link rel="stylesheet" href="style.css">
+    <script src = "wordle.js"></script>
+    <style>
+      #tabledesign{
+          border: 0;
+      }   
+    </style>
+  </head>
+  
+  <body>
     
-    <body>
-        <div class = "menu_bar">
-            <ul>
-                <li><a href="index.html" class="active" target = "_self">About</a></li>
-                <li><a href="skills.html" target = "_self">Skills</a></li>
-                <li><a href="education.html" target = "_self">Education</a></li>
-                <li><a href="experience.html" target = "_self">Experience</a></li>
-                <li><a href="interests.html" target = "_self">Interests</a></li>
-            </ul>
+        <header class="menubar">
+          <div class="title">
+            <a>Wordle</a>
+          </div>
+          <div class="options">
+            <button type="button" class= "opt" id="instructions">&#9432</button>
+            <button type="button" class= "opt" id="hint">&#63</button>
+            <button type="button" class= "opt" id="mode">&#9681</button>
+          </div>
+        </header>
+      
+    <div class = "section">
+      <div class="play">
+        <div id="board"></div>
+        <div id="congrats"> 
+    <img src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif" />
         </div>
-
-        <div class = "section">
-        <div class = "image_name">
-            <figure>
-                <div class="circular--portrait"> 
-                  <img src="https://i.pinimg.com/originals/5b/c8/e2/5bc8e2ab43fbcdda182fe0fc74caabf8.jpg" /> 
-                </div>
-            </figure>
-            <h1>
-                Zahwa Fatima
-            </h1>
-            <h2>
-                Software Engineering Student
-            </h2>
-            <h3>
-                <a href = "mailto: zahwa.fatima003@gmail.com">zahwa.fatima003@gmail.com</a>
-            </h3>
-        </div>
-
-        <div class="Description">
-            <h4>
-              About
-            </h4>
-            <p id = "image">
-                I am a second year Software Engineering Student at the University of Calgary in Calgary, Alberta. I am excited to practice my skills and incorporate my hobbies to be a purposeful software engineer!
-                <br>
-                <br>
-                My skills: <br>
-            </p>
-            <div id="tabledesign">
-                <table><thead></thead><tbody><tr>
-                        <td><input type="checkbox" checked><label>Python 3</label></td> 
-                        <td><input type="checkbox" checked><label>Java</label></td>
-                    </tr> <tr>
-                        <td><input type="checkbox" checked><label>C</label></td> 
-                        <td><input type="checkbox" checked><label>C++</label></td>
-                    </tr> <tr>
-                        <td><input type="checkbox" checked><label>SQL</label></td> 
-                        <td><input type="checkbox" checked><label>Git</label></td>
-                    </tr> <tr>
-                        <td><input type="checkbox" checked><label>Agile (Scrum)</label></td> 
-                        <td><input type="checkbox" checked><label>Microsoft 365</label></td>
-                    </tr> </tbody>
-                </table><br><br>
-            </div>
-        </div>
+      <button id="startOver">Start Over</button>
       </div>
-    </body>
-    <footer class="footer">
-      <p> Zahwa Fatima 2023 </p>
-    </footer>
+      <div id="instr">
+        <h3>How To Play</h3>
+        <ul>
+          <li>Start typing. The letters will appear in the boxes.</li>
+          <li>Remove Letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green background are in the right spot</li>
+          <li>Letters with yellow background exist in the word, but are in the wrong spots</li>
+          <li>Letters with gray background do not exist in the word</li>
+          <li>If you need a hint, click the &#63 icon</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+      
+    <div class="message" id="message-hint"></div>
+    <div class="message" id="message-win"></div>
+    <div class="message" id="message-lose"></div>
+  
+  
+  </body>
+  <footer class="footer">
+        <p> Zahwa Fatima 2023 </p>
+  </footer>
 </html>
